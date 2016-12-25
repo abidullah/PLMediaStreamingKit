@@ -13,6 +13,8 @@
 
 @class PLRTCStreamingSession;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /// @abstract delegate 对象可以实现对应的方法来获取推流及连麦的状态。除特别说明外，会在 delegateQueue 中回调，如未设置 delegateQueue，将在主队列中回调
 @protocol PLRTCStreamingSessionDelegate <NSObject>
 
@@ -482,5 +484,7 @@
  @since      v1.1.1
  */
 + (NSString *)versionInfo;
+
+NS_ASSUME_NONNULL_END
 
 @end

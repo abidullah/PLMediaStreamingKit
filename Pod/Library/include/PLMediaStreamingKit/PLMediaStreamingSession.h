@@ -11,6 +11,8 @@
 
 @class PLMediaStreamingSession;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /// @abstract delegate 对象可以实现对应的方法来获取流的状态及设备授权情况。
 @protocol PLMediaStreamingSessionDelegate <NSObject>
 
@@ -750,6 +752,8 @@
  @since      v1.8.1
  */
 + (NSString *)versionInfo;
+
+NS_ASSUME_NONNULL_END
 
 @end
 

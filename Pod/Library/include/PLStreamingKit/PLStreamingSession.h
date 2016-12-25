@@ -13,6 +13,7 @@
 @class PLStreamingSession;
 @class QNDnsManager;
 
+NS_ASSUME_NONNULL_BEGIN
 @protocol PLStreamingSendingBufferDelegate;
 
 /*!
@@ -900,5 +901,5 @@ typedef void (^PLStreamDiagnosisResultHandler)(NSString * _Nullable diagnosisRes
     @since      v1.1.1
  */
 + (NSString *)versionInfo;
-
+NS_ASSUME_NONNULL_END
 @end

@@ -208,6 +208,7 @@ typedef enum {
  
     @since      v1.0.0
  */
+NS_ASSUME_NONNULL_BEGIN
 extern NSString *kPLVideoStreamingQualityLow1;
 
 /*!
@@ -538,7 +539,7 @@ typedef void (^PLAudioSessionDidEndInterruptionCallback)();
  */
 
 typedef void (^PLStreamScreenshotHandler)(UIImage * _Nullable image);
-
+NS_ASSUME_NONNULL_END
 #endif
 
 
